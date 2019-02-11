@@ -25,7 +25,7 @@ Call method <code><strong>get_ipwhois($ip, $format, $lang)</strong></code> passi
 <li>
 <p><strong>$format</strong></p>
 Based on your choice, the ipwhois API can deliver results in:
-  <ul><li>json</li><li>xml</li><li>line</li></ul>
+  <ul><li>json (default)</li><li>xml</li><li>line</li></ul>
 </li>
   
 <li>
