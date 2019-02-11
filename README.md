@@ -16,3 +16,33 @@ You can call the API by sending HTTP GET requests to <code>http://free.ipwhois.i
 <h2>System Requirements</h2>
 
 Internet connection is required to run this component.
+
+<h2>Basic Usage</h2>
+
+Call method <code><strong>get_ipwhois($ip, $format, $lang)</strong></code> passing IP address as parameters (rest of the parameters are optional) and it will return the Geolocation for the passed IP address. To customize the geolocation response, you can pass the other parameters to <code><strong>get_ipwhois()</strong></code> method as described below:
+
+<ul>
+<li>
+<p><strong>$format</strong></p>
+Based on your choice, the ipwhois API can deliver results in:
+  <ul><li>JSON</li><li>XML</li><li>Newline</li></ul>
+</li>
+  
+<li>
+<p><strong>$lang</strong></p>
+Pass the language parameter to get the geolocation information in a language other than English. By default, it is set to English language.<br>
+ipwhois provides response in the following languages:
+  
+<ul>
+<li>en -	English (default)</li>
+<li>de -	Deutsch (German)</li>
+<li>es -	Español (Spanish)</li>
+<li>pt-BR -	Español - Argentina (Spanish)</li>
+<li>fr -	Français (French)</li>
+<li>ja -	日本語 (Japanese)</li>
+<li>zh-CN -	中国 (Chinese)</li>
+<li>ru -	Русский (Russian)</li>
+</ul>
+ 
+</li>
+</ul>
