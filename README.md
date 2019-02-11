@@ -48,7 +48,8 @@ ipwhois provides response in the following languages:
 </ul>
 
 <h2>Example</h2>
-```php
+
+```
 <?php
     $ip = "CLIENT_IP_ADDRESS";
     $location = get_ipwhois($ip);
@@ -59,7 +60,7 @@ ipwhois provides response in the following languages:
     echo "</pre>";
 
     function get_ipwhois($ip, $format = "json", $lang = "en") {
-        $url = "http://free.ipwhois.io/".$format."/".$ip."&lang=".$lang;
+        $url = "http://free.ipwhois.io/".$format."/".$ip."?lang=".$lang;
         $cURL = curl_init();
 
         curl_setopt($cURL, CURLOPT_URL, $url);
