@@ -49,7 +49,7 @@ ipwhois provides response in the following languages:
 
 <h2>Example</h2>
 
-```
+```php
 <?php
     $ip = "CLIENT_IP_ADDRESS";
     $location = get_ipwhois($ip);
