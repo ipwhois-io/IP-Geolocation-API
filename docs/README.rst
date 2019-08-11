@@ -1,13 +1,10 @@
 **************************
-IP Geolocation API - PHP SDK
+ipwhois.io | IP Geolocation API - PHP SDK
 **************************
 
 Overview
 ============
-Use the IP_Geolocation_API_ to quickly and simply integrate IP geolocation into your script or website. Save yourself the hassle of setting up local GeoIP libraries and having to remember to regularly update the data. You can use ipwhois.io to filter out bot traffic, customize content based on visitor's location, display full country names, perform bulk IP geolocation, and more.
-
-.. _IP Geolocation API: https://ipwhois.io
-
+Use the https://ipwhois.io to quickly and simply integrate IP geolocation into your script or website. Save yourself the hassle of setting up local GeoIP libraries and having to remember to regularly update the data. You can use ipwhois.io to filter out bot traffic, customize content based on visitor's location, display full country names, perform bulk IP geolocation, and more.
 
 Quick Start Guide
 ============
@@ -20,9 +17,7 @@ You can call the API by sending HTTP ``GET requests`` to:
 
 ``{IP}`` can be an IPv4 or IPv6 address, or none to use the current IP address.
 
-Note: Complete documentation to use this SDK is also available at IP_Geolocation_Documentation_.
-
-.. _IP Geolocation Documentation: https://ipwhois.io/documentation
+Note: Complete documentation to use this SDK is also available at https://ipwhois.io/documentation
 
 
 Basic Usage
