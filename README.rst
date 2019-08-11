@@ -29,7 +29,7 @@ Basic Usage
 ============
 Call method 
 
-.. code:: php
+.. code:: console
 
   get_ipwhois($ip, $format, $lang)
   
