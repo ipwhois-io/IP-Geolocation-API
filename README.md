@@ -11,7 +11,7 @@ You can call the API by sending HTTP GET requests to <code>http://free.ipwhois.i
 
 <code>{IP}</code> can be an IPv4 or IPv6 address, or none to use the current IP address.
 
-<strong>Note:</strong> Complete documentation to use this SDK is also available at <a href="https://ipwhois.io/documentation">IP Geolocation API PHP SDK - Documentation</a>.
+<strong>Note:</strong> Complete documentation to use this API is also available at <a href="https://ipwhois.io/documentation">IP Geolocation API Documentation</a>.
 
 <h2>System Requirements</h2>
 
