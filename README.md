@@ -51,7 +51,7 @@ ipwhois provides response in the following languages:
 
 ```php
 <?php
-    $ip = "CLIENT_IP_ADDRESS";
+    $ip = "8.8.4.4"; // CLIENT IPADDRESS
     $location = get_ipwhois($ip);
     $decodedLocation = json_decode($location, true);
     
