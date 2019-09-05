@@ -1,7 +1,7 @@
 {
   "name": "ipwhois-io/ip-geolocation-api",
   "version": "1.0.0",
-  "description": "A Simple php wrapper for https://ipwhois.io",
+  "description": "A Simple php wrapper for <b>https://ipwhois.io</b>",
   "type": "library",
   "license": "MIT",
   "authors": [
