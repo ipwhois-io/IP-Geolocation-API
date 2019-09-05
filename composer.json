@@ -1,0 +1,24 @@
+{
+  "name": "ipwhois-io/ip-geolocation-api",
+  "version": "1.0.0",
+  "description": "A Simple php wrapper for https://ipwhois.io",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "IPWHOIS.io",
+      "homepage": "https://ipwhois.io/",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "~6.0",
+    "nesbot/carbon": "~1.18",
+    "php" : "^5.5 || ^7.0",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7",
+    "phpunit/php-code-coverage": "^6.0"
+  }
+}
