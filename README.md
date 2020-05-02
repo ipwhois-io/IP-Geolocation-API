@@ -19,7 +19,7 @@ Internet connection is required to run this component.
 
 <h2>Basic Usage</h2>
 
-Call method <code><strong>get_ipwhois($ip, $format, $lang)</strong></code> passing IP address as parameters (rest of the parameters are optional) and it will return the Geolocation for the passed IP address. To customize the geolocation response, you can pass the other parameters to <code><strong>get_ipwhois()</strong></code> method as described below:
+Call method <code><strong>get_ipwhois($ip, $format, $lang, $apiKey)</strong></code> passing IP address as parameters (rest of the parameters are optional) and it will return the Geolocation for the passed IP address. To customize the geolocation response, you can pass the other parameters to <code><strong>get_ipwhois()</strong></code> method as described below:
 
 <ul>
 <li>
@@ -52,17 +52,16 @@ ipwhois provides response in the following languages:
 ```php
 <?php
     $ip = "8.8.4.4"; // CLIENT IPADDRESS
-    $location = get_ipwhois($ip);
-    $decodedLocation = json_decode($location, true);
+    $apiKey = ""; // Leave blank for free endpoint
+    $location = get_ipwhois($ip,'json','en',$apiKey);
     
     echo "<pre>";
-    print_r($decodedLocation);
+    print_r($location);
     echo "</pre>";
 
-    function get_ipwhois($ip, $format = "json", $lang = "en") {
-        $url = "http://free.ipwhois.io/".$format."/".$ip."?lang=".$lang;
+    function get_ipwhois($ip, $format = "json", $lang = "en", $apiKey = "") {
+        $url = "http://".($apiKey != '' ? 'ipwhois.pro' : 'free.ipwhois.io')."/".$format."/".$ip."?lang=".$lang.($apiKey != '' ? '&key='.$apiKey : '');
         $cURL = curl_init();
-
         curl_setopt($cURL, CURLOPT_URL, $url);
         curl_setopt($cURL, CURLOPT_HTTPGET, true);
         curl_setopt($cURL, CURLOPT_RETURNTRANSFER, true);
@@ -70,7 +69,7 @@ ipwhois provides response in the following languages:
             'Content-Type: application/json',
             'Accept: application/json'
         ));
-        return curl_exec($cURL);
+        return json_decode(curl_exec($cURL),true);
     }
 ?>
 ```
