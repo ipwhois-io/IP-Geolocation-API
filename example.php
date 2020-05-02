@@ -1,10 +1,9 @@
 <?php
-    require_once('ip-geolocation-api.php');  
+    require_once('function_ipwhois.php');  
     $ip = "8.8.4.4"; // CLIENT IPADDRESS
-    $location = get_ipwhois($ip);
-    $decodedLocation = json_decode($location, true);
-    
+    $location = get_ipwhois($ip,'json','en','');
+
     echo "<pre>";
-    print_r($decodedLocation);
+    print_r($location);
     echo "</pre>";
 ?>
