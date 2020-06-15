@@ -4,7 +4,8 @@ ipwhois.io | IP Geolocation API - PHP SDK
 
 Overview
 ============
-Use the `IP Geolocation API <https://ipwhois.io>`_ to quickly and simply integrate IP geolocation into your script or website. Save yourself the hassle of setting up local GeoIP libraries and having to remember to regularly update the data. You can use ipwhois.io to filter out bot traffic, customize content based on visitor's location, display full country names, perform bulk IP geolocation, and more.
+
+This `IP Geolocation API <https://ipwhois.io>`_ service is designed for quick and easy visitors IP geolocation integration into your script or website. Get rid of setting up local GeoIP libraries and forget about regular updates. Our neural network analyzes dozens of sources and almost real-time updates the database.
 
 Quick Start Guide
 ============
@@ -13,7 +14,7 @@ You can call the API by sending HTTP ``GET requests`` to:
 
 .. code:: console
 
-  http://free.ipwhois.io/json/{IP}
+  http://ipwhois.app/json/{IP}
 
 ``{IP}`` can be an IPv4 or IPv6 address, or none to use the current IP address.
 
@@ -45,7 +46,7 @@ Example
       echo "</pre>";
 
       function get_ipwhois($ip, $format = "json", $lang = "en", $apiKey = "") {
-          $url = "http://".($apiKey != '' ? 'ipwhois.pro' : 'free.ipwhois.io')."/".$format."/".$ip."?lang=".$lang.($apiKey != '' ? '&key='.$apiKey : '');
+          $url = "http://".($apiKey != '' ? 'ipwhois.pro' : 'ipwhois.app')."/".$format."/".$ip."?lang=".$lang.($apiKey != '' ? '&key='.$apiKey : '');
           $cURL = curl_init();
           curl_setopt($cURL, CURLOPT_URL, $url);
           curl_setopt($cURL, CURLOPT_HTTPGET, true);
