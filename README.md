@@ -2,8 +2,7 @@
 
 <h2>Overview</h2>
 
-Use the ipwhois.io <a href="https://ipwhois.io">IP Geolocation API</a> to quickly and simply integrate IP geolocation into your script or website. Save yourself the hassle of setting up local GeoIP libraries and having to remember to regularly update the data.
-You can use ipwhois.io to filter out bot traffic, customize content based on visitor's location, display full country names, perform bulk IP geolocation, and more.
+This <a href="https://ipwhois.io">IP Geolocation API</a> service is designed for quick and easy visitors IP geolocation integration into your script or website. Get rid of setting up local GeoIP libraries and forget about regular updates. Our neural network analyzes dozens of sources and almost real-time updates the database.
 
 <h2>Quick Start Guide</h2>
 
