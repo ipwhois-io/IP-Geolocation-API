@@ -6,7 +6,7 @@ This <a href="https://ipwhois.io">IP Geolocation API</a> service is designed for
 
 <h2>Quick Start Guide</h2>
 
-You can call the API by sending HTTP GET requests to <code>http://ipwhois.app/json/{IP}</code>
+You can call the API by sending HTTP GET requests to <code>http://ipwho.is/{IP}</code>
 
 <code>{IP}</code> can be an IPv4 or IPv6 address, or none to use the current IP address.
 
@@ -59,7 +59,7 @@ ipwhois provides response in the following languages:
     echo "</pre>";
 
     function get_ipwhois($ip, $format = "json", $lang = "en", $apiKey = "") {
-        $url = "http://".($apiKey != '' ? 'ipwhois.pro' : 'ipwhois.app')."/".$format."/".$ip."?lang=".$lang.($apiKey != '' ? '&key='.$apiKey : '');
+        $url = "http://".($apiKey != '' ? 'ipwhois.pro' : 'ipwho.is')."/".$ip."?lang=".$lang.($apiKey != '' ? '&key='.$apiKey : '')."&output=".$format;
         $cURL = curl_init();
         curl_setopt($cURL, CURLOPT_URL, $url);
         curl_setopt($cURL, CURLOPT_HTTPGET, true);
